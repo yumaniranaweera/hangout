@@ -9,13 +9,20 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">ShoppingCart</th></tr>
-<tr><td><a href="#t0">Submit Order Tests</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">3</td><td>ErrorHandling</td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">Error Validation Tests</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">8,922</td><td>ErrorHandling</td><td></td></tr>
-<tr><th>Total</th><th class="num">1</th><th class="num">0</th><th class="num">0</th><th class="num">8,925</th><th colspan="2"></th></tr>
+<tr><td><a href="#t0">Error Validation Tests</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">4</td><td>PurchaseOrder</td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Submit Order Tests</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">1</td><td class="num">45,747</td><td>PurchaseOrder</td><td></td></tr>
+<tr><th>Total</th><th class="num">1</th><th class="num">0</th><th class="num attn">1</th><th class="num">45,751</th><th colspan="2"></th></tr>
 </table>
 <table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">ShoppingCart</th></tr></tbody><tbody id="t0"><tr><th colspan="4" class="invisible"/></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">Error Validation Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">learningspace.tests.ErrorValidationTests</td><td><a href="#m0">LoginErrorValidation</a></td><td rowspan="1">1669499272235</td><td rowspan="1">828</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Submit Order Tests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">learningspace.tests.SubmitOrderTest</td><td><a href="#m0">SubmitOrder</a></td><td rowspan="1">1669551315564</td><td rowspan="1">15556</td></tr><tr><th colspan="4">Submit Order Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">learningspace.tests.SubmitOrderTest</td><td><a href="#m1">SubmitOrder</a></td><td rowspan="1">1669551293282</td><td rowspan="1">16010</td></tr></tbody>
 </table>
-<h2>Submit Order Tests</h2><h2>Error Validation Tests</h2><h3 id="m0">learningspace.tests.ErrorValidationTests#LoginErrorValidation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Error Validation Tests</h2><h2>Submit Order Tests</h2><h3 id="m0">learningspace.tests.SubmitOrderTest#SubmitOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>testA2@gmail.com</td><td>testA2@gmail.com</td><td>ADIDAS ORIGINAL</td></tr><tr><th colspan="3">Exception</th></tr><tr><td colspan="3"><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at learningspace.tests.SubmitOrderTest.SubmitOrder(SubmitOrderTest.java:37)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 20 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">learningspace.tests.SubmitOrderTest#SubmitOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>testA1@gmail.com</td><td>testA1@gmail.com</td><td>ZARA COAT 3</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

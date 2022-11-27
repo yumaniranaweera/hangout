@@ -6,6 +6,7 @@ import java.util.List;
 
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import learningspace.pageObjects.CartPage;
@@ -18,15 +19,15 @@ import learningspace.testComponents.BaseTest;
 
 public class SubmitOrderTest extends BaseTest{
 	
-	String productName = "ZARA COAT 3";
+	//String productName = "ZARA COAT 3";
 
-	@Test
-	public void SubmitOrder() throws IOException{
+	@Test(dataProvider="getData", groups="PurchaseOrder")
+	public void SubmitOrder(String email, String password, String productName) throws IOException{
 
 		String countryName = "india";
-		String productName = "ZARA COAT 3";
+		
 
-		ProductCatalog prdCatalog = landingPage.Login("testA1@gmail.com", "testA1@gmail.com");
+		ProductCatalog prdCatalog = landingPage.Login(email, password);
 		List<WebElement> prdList = prdCatalog.getProductList();
 		prdCatalog.addToCart(productName);
 		CartPage crtPage = prdCatalog.gotToCart();
@@ -43,13 +44,24 @@ public class SubmitOrderTest extends BaseTest{
 	}
 
 	
-	@Test(dependsOnMethods = {"SubmitOrder"})
-	public void VerifyOrder() throws IOException{
+	@Test(dependsOnMethods = {"SubmitOrder"}, dataProvider="getData")
+	public void VerifyOrder(String email, String password, String productName) throws IOException{
 
-		ProductCatalog prdCatalog = landingPage.Login("testA1@gmail.com", "testA1@gmail.com");
+		ProductCatalog prdCatalog = landingPage.Login(email, password);
 		OrderPage orderPg= prdCatalog.gotToOrder();
 		Assert.assertTrue(orderPg.verifyCartProduct(productName));
 		
 	
 	}
+	
+	@DataProvider
+	public Object[][] getData(){
+		return new Object[][]{{"testA1@gmail.com","testA1@gmail.com","ZARA COAT 3"},{"testA2@gmail.com","testA2@gmail.com","ADIDAS ORIGINAL"}};
+	}
 }
+
+
+
+
+
+

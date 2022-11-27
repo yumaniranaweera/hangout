@@ -30,6 +30,7 @@ public class ProductCatalog extends AbstractComponent {
 	
 	//WebElements defined under By type to be used in WebElement context. You can use POs only in driver context
 	By productBy = By.cssSelector(".mb-3");
+//	By addtoCartBtn = By.cssSelector(".card-body button:last-of-type");
 	By addtoCartBtn = By.xpath("//div[@class='card-body']/button[2]");
 	By toastContainer = By.cssSelector("#toast-container");
 	
