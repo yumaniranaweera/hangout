@@ -64,7 +64,7 @@ public class SubmitOrderTest extends BaseTest{
 	
 	
 	//DataProvider with Hashmap
-	@DataProvider
+/*	@DataProvider
 	public Object[][] getData(){
 	
 		HashMap<String,String> map = new HashMap <String, String>();
@@ -79,6 +79,12 @@ public class SubmitOrderTest extends BaseTest{
 		
 		
 		return new Object[][]{{map},{map1}};
+	}*/
+	
+	@DataProvider
+	public Object[][] getData() throws IOException{
+		List<HashMap<String, String>> data = getJsonDataToMap(System.getProperty("user.dir")+ "\\src\\test\\java\\learningspace\\data\\PurchaseOrder.json");
+		return new Object[][]{{data.get(0)},{data.get(1)}};
 	}
 
 }
