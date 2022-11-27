@@ -1,106 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="2" total="4" passed="1">
+<testng-results skipped="0" failed="0" ignored="2" total="4" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="ShoppingCart" duration-ms="45747" started-at="2022-11-27T12:14:45Z" finished-at="2022-11-27T12:15:31Z">
+  <suite name="ShoppingCart" duration-ms="49063" started-at="2022-11-27T16:23:06Z" finished-at="2022-11-27T16:23:55Z">
     <groups>
       <group name="PurchaseOrder">
-        <method signature="SubmitOrderTest.SubmitOrder(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:learningspace.tests.SubmitOrderTest@5ec0a365]" name="SubmitOrder" class="learningspace.tests.SubmitOrderTest"/>
+        <method signature="SubmitOrderTest.SubmitOrder(java.util.HashMap)[pri:0, instance:learningspace.tests.SubmitOrderTest@59309333]" name="SubmitOrder" class="learningspace.tests.SubmitOrderTest"/>
       </group> <!-- PurchaseOrder -->
     </groups>
-    <test name="Error Validation Tests" duration-ms="4" started-at="2022-11-27T12:14:45Z" finished-at="2022-11-27T12:14:45Z">
+    <test name="Error Validation Tests" duration-ms="4" started-at="2022-11-27T16:23:06Z" finished-at="2022-11-27T16:23:06Z">
     </test> <!-- Error Validation Tests -->
-    <test name="Submit Order Tests" duration-ms="45747" started-at="2022-11-27T12:14:45Z" finished-at="2022-11-27T12:15:31Z">
+    <test name="Submit Order Tests" duration-ms="49063" started-at="2022-11-27T16:23:06Z" finished-at="2022-11-27T16:23:55Z">
       <class name="learningspace.tests.SubmitOrderTest">
-        <test-method status="PASS" signature="LaunchApplication()[pri:0, instance:learningspace.tests.SubmitOrderTest@5ec0a365]" name="LaunchApplication" is-config="true" duration-ms="7744" started-at="2022-11-27T12:14:45Z" finished-at="2022-11-27T12:14:53Z">
+        <test-method status="PASS" signature="LaunchApplication()[pri:0, instance:learningspace.tests.SubmitOrderTest@59309333]" name="LaunchApplication" is-config="true" duration-ms="8516" started-at="2022-11-27T16:23:06Z" finished-at="2022-11-27T16:23:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchApplication -->
-        <test-method status="PASS" signature="SubmitOrder(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:learningspace.tests.SubmitOrderTest@5ec0a365]" name="SubmitOrder" duration-ms="16010" started-at="2022-11-27T12:14:53Z" data-provider="getData" finished-at="2022-11-27T12:15:09Z">
+        <test-method status="PASS" signature="SubmitOrder(java.util.HashMap)[pri:0, instance:learningspace.tests.SubmitOrderTest@59309333]" name="SubmitOrder" duration-ms="16543" started-at="2022-11-27T16:23:14Z" data-provider="getData" finished-at="2022-11-27T16:23:31Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[testA1@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[testA1@gmail.com]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[ZARA COAT 3]]>
+                <![CDATA[{password=testA1@gmail.com, email=testA1@gmail.com, productName=ZARA COAT 3}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SubmitOrder -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:learningspace.tests.SubmitOrderTest@5ec0a365]" name="TearDown" is-config="true" duration-ms="187" started-at="2022-11-27T12:15:09Z" finished-at="2022-11-27T12:15:09Z">
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:learningspace.tests.SubmitOrderTest@59309333]" name="TearDown" is-config="true" duration-ms="160" started-at="2022-11-27T16:23:31Z" finished-at="2022-11-27T16:23:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
-        <test-method status="PASS" signature="LaunchApplication()[pri:0, instance:learningspace.tests.SubmitOrderTest@5ec0a365]" name="LaunchApplication" is-config="true" duration-ms="6077" started-at="2022-11-27T12:15:09Z" finished-at="2022-11-27T12:15:15Z">
+        <test-method status="PASS" signature="LaunchApplication()[pri:0, instance:learningspace.tests.SubmitOrderTest@59309333]" name="LaunchApplication" is-config="true" duration-ms="6697" started-at="2022-11-27T16:23:31Z" finished-at="2022-11-27T16:23:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchApplication -->
-        <test-method status="FAIL" signature="SubmitOrder(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:learningspace.tests.SubmitOrderTest@5ec0a365]" name="SubmitOrder" duration-ms="15556" started-at="2022-11-27T12:15:15Z" data-provider="getData" finished-at="2022-11-27T12:15:31Z">
+        <test-method status="PASS" signature="SubmitOrder(java.util.HashMap)[pri:0, instance:learningspace.tests.SubmitOrderTest@59309333]" name="SubmitOrder" duration-ms="16934" started-at="2022-11-27T16:23:37Z" data-provider="getData" finished-at="2022-11-27T16:23:54Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[testA2@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[testA2@gmail.com]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[ADIDAS ORIGINAL]]>
+                <![CDATA[{password=testA2@gmail.com, email=testA2@gmail.com, productName=ADIDAS ORIGINAL}]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertTrue(Assert.java:44)
-at org.testng.Assert.assertTrue(Assert.java:54)
-at learningspace.tests.SubmitOrderTest.SubmitOrder(SubmitOrderTest.java:37)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-at java.util.concurrent.FutureTask.run(Unknown Source)
-at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-at java.lang.Thread.run(Unknown Source)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SubmitOrder -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:learningspace.tests.SubmitOrderTest@5ec0a365]" name="TearDown" is-config="true" duration-ms="130" started-at="2022-11-27T12:15:31Z" finished-at="2022-11-27T12:15:31Z">
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:learningspace.tests.SubmitOrderTest@59309333]" name="TearDown" is-config="true" duration-ms="178" started-at="2022-11-27T16:23:54Z" finished-at="2022-11-27T16:23:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->

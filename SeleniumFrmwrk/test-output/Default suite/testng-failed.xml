@@ -8,7 +8,7 @@
           <include name="LaunchApplication"/>
           <include name="VerifyOrder"/>
           <include name="TearDown"/>
-          <include name="SubmitOrder" invocation-numbers="0 1"/>
+          <include name="SubmitOrder"/>
         </methods>
       </class> <!-- learningspace.tests.SubmitOrderTest -->
     </classes>

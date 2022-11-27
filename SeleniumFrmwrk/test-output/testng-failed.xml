@@ -1,20 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [ShoppingCart]" parallel="tests">
-  <test thread-count="5" name="Submit Order Tests(failed)" parallel="tests">
-    <groups>
-      <run>
-        <include name="PurchaseOrder"/>
-      </run>
-    </groups>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
       <class name="learningspace.tests.SubmitOrderTest">
         <methods>
           <include name="LaunchApplication"/>
+          <include name="VerifyOrder"/>
           <include name="TearDown"/>
-          <include name="SubmitOrder" invocation-numbers="1"/>
+          <include name="SubmitOrder"/>
         </methods>
       </class> <!-- learningspace.tests.SubmitOrderTest -->
     </classes>
-  </test> <!-- Submit Order Tests(failed) -->
-</suite> <!-- Failed suite [ShoppingCart] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
